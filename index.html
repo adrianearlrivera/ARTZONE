@@ -1,0 +1,51 @@
+<!--COLOUR PALLETE https://www.color-hex.com/color-palette/1020754-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>JavaScript Drawing APP</title>
+</head>
+<body style="background-color:	#e6e6fa;">
+    <nav>
+        <label class="logo">ART ZONE</label>
+        <ul>
+            <li><button  class="nav-button"  role="button" id="clear">CLEAR</button></li>
+            <li><button class="nav-button"  role="button" id="save">SAVE</button></li>
+        </ul>
+    </nav>
+    <canvas></canvas>
+    <div class="toolbar">
+        <ul>
+            <li>
+                <label for="thickness" >Thickness</label>
+                <input type="range" class="form-range" min="1" max="16" step="1" id="thickness">
+            </li>
+            <li>
+                <label for="colourpicker" >Colour</label>
+                <input type="color" class="colourpicker" value="#0000ff">
+            </li>
+            <li>
+                <button class="tool-btn"  role="button" id = 'brush'>Use Brush</button>
+            </li>
+            <li>
+                <button class="tool-btn"  role="button" id = 'rectangle' >Draw Rectangle</button>
+            </li>
+            <li>
+                <button class="tool-btn"  role="button" id = 'circle'>Draw Circle</button>
+            </li>
+            <li>
+                <button class="tool-btn"  role="button" id = 'fill'>Fill</button>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+    
+
+</html>
